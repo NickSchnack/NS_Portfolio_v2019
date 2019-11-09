@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs -->
+    <meta charset="UTF-8">
+    <title>nickschnack</title>
+    <meta name="description" content="Nick Schnack's Software Development Portfolio">
+    <meta name="author" content="Nick Schnack">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style_main_moving_copy.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- ONLOAD SCRIPT -->
+    <script src="scripts/scripts_onload.js"></script>
+
+    <!-- DEFINE THE CANVAS -->
+    <div id="canvas" class="o-canvasGrid -includeMargins -fixedPageInIE">
+
+        <!-- Background -->
+        <div id="background" class="o-background -stylePrimary"></div>
+        <div class="o-background -styleOverlay"></div>
+
+        <!-- Logo -->
+        <div id="cornerLogo" class="o-cornerLogo">
+            <img class="o-cornerLogo_logo" alt="" src="images/img_NSlogo_BlackLet_BBBO.png">
+        </div>
+
+        <!-- Navigation icon -->
+        <a id="navIcon" class="o-navIcon" href="menu.html" onclick="toggleOverlayMenu(event)">
+            <nav>
+                <div class="o-navIcon_navLine -line1"></div>
+                <div class="o-navIcon_navLine -line2"></div>
+                <div class="o-navIcon_navLine -line3"></div>
+            </nav>
+        </a>
+
+        <!-- Navigation bar -->
+        <nav class="o-navBar">
+            <div class="o-navBar_linkContainer -home"><a href="home.html" class="o-navBar_linkContainer_link"><h2>home</h2></a></div>
+            <div class="o-navBar_linkContainer -about"><a href="about.html" class="o-navBar_linkContainer_link"><h2>about</h2></a></div>
+            <div class="o-navBar_linkContainer -projects"><a href="projects.html" class="o-navBar_linkContainer_link"><h2>projects</h2></a></div>
+            <div class="o-navBar_linkContainer -skills"><a href="skills.html" class="o-navBar_linkContainer_link"><h2>skills</h2></a></div>
+            <div class="o-navBar_linkContainer -contact -current"><a href="contact.html" class="o-navBar_linkContainer_link"><h2>contact</h2></a></div>
+        </nav>
+
+        <!-- Content -->
+        <form class="o-content -columnsExcludeMargins o-contactContent">
+            <label for="name" class="o-contactContent_label -name">name :</label>
+            <input type="text" id="name" name="name" placeholder="your name..." class="o-contactContent_input -name">
+            <label for="email" class="o-contactContent_label -email">email address :</label>
+            <input type="text" id="email" name="emailname" placeholder="your email..." class="o-contactContent_input -email">
+            <label for="title" class="o-contactContent_label -title">title :</label>
+            <input type="text" id="title" name="title" placeholder="your title..." class="o-contactContent_input -title">
+            <label for="company" class="o-contactContent_label -company">company :</label>
+            <input type="text" id="company" name="company" placeholder="your company..." class="o-contactContent_input -company">
+            <label for="message" class="o-contactContent_label -message">message :</label>
+            <textarea type="text" id="message" name="message" placeholder="your message..." class="o-contactContent_input -message"></textarea>
+            <button class="o-contactContent_button">send message</button>
+        </form>
+
+        <!-- Footer -->
+        <div id="footer" class="o-footer">
+            <span style="white-space:nowrap; padding: 4px">COPYRIGHT &copy; 2018</span>
+            <span style="white-space:nowrap">NICK SCHNACK</span>
+        </div>
+
+        <!-- Accent -->
+        <div class="o-accent -contact">
+            <img class="o-accent_image -contact" alt="" src="images/img_ContactAccent_Color.png">
+        </div>
+
+        <!-- Overlay -->
+        <div class="o-overlayMenu -background"></div>
+        <div class="o-overlayMenu -columnsExcludeMargins">
+            <nav class="o-overlayMenu_nav">
+                <div class="o-overlayMenu_nav_linkContainer -home"><a href="home.html" class="o-overlayMenu_nav_linkContainer_link">home</a></div>
+                <div class="o-overlayMenu_nav_linkContainer -about"><a href="about.html" class="o-overlayMenu_nav_linkContainer_link">about</a></div>
+                <div class="o-overlayMenu_nav_linkContainer -projects"><a href="projects.html" class="o-overlayMenu_nav_linkContainer_link">projects</a></div>
+                <div class="o-overlayMenu_nav_linkContainer -skills"><a href="skills.html" class="o-overlayMenu_nav_linkContainer_link">skills</a></div>
+                <div class="o-overlayMenu_nav_linkContainer -contact"><a href="contact.html" class="o-overlayMenu_nav_linkContainer_link">contact</a></div>
+            </nav>
+        </div>
+
+    </div>
+
+    <!-- TESTING LAYER (Can be removed when finished) -->
+    <div class="layer-position-9999">
+        <div id="style-test-mobile">Mob</div>
+        <div id="style-test-tablet">Tab</div>
+        <div id="style-test-desktop">SmDsk</div>
+        <div id="style-test-LGdesktop">LgDsk</div>
+        <div id="style-test-port">_Port</div>
+        <div id="style-test-land">_Land</div>
+    </div>
+
+</body>
+<script src="scripts/scripts_main.js"></script>
+</html>

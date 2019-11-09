@@ -1,0 +1,385 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* STYLE BODY */
+body {
+    background-color: #4D4F57;
+    font-family: 'Palanquin', sans-serif;
+}
+
+
+/* STYLE LAYERS */
+#background_layer {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index:1;
+}
+
+#animation_layer {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index:2;
+}
+
+#content_layer {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index:3;
+}
+
+#foreground_layer {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index:2;
+}
+
+
+/* STYLE SECTIONS */
+.top {
+    height: 30%;
+    width: 100%;
+}
+
+.middle {
+    height: 40%;
+    width: 100%;
+}
+
+.bottom {
+    height: 30%;
+    width: 100%;
+}
+
+.animation_main {
+    position: absolute;
+    height: 70%;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.content_header {
+    height: 35%;
+    width: 100%;
+}
+
+.content_main {
+    position: absolute;
+    height: 65%;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* STYLE SPECIFIC ELEMENTS */
+#background_top {
+    /* Gradually fade into blue without sharp edges */
+    /* https://css-tricks.com/easing-linear-gradients/ */
+    background-image: linear-gradient(
+        hsl(231, 7%, 20%) 0%,
+        hsla(231, 7%, 20%, 0.738) 19%,
+        hsla(231, 7%, 20%, 0.541) 34%,
+        hsla(231, 7%, 20%, 0.382) 47%,
+        hsla(231, 7%, 20%, 0.278) 56.5%,
+        hsla(231, 7%, 20%, 0.194) 65%,
+        hsla(231, 7%, 20%, 0.126) 73%,
+        hsla(231, 7%, 20%, 0.075) 80.2%,
+        hsla(231, 7%, 20%, 0.042) 86.1%,
+        hsla(231, 7%, 20%, 0.021) 91%,
+        hsla(231, 7%, 20%, 0.008) 95.2%,
+        hsla(231, 7%, 20%, 0.002) 98.2%,
+        hsla(231, 7%, 20%, 0) 100%
+    );
+}
+
+#foreground_bottom_1 {
+    position:absolute;
+    animation: change_theme_gradient_1 30s linear 0s backwards infinite;
+
+    /* Gradually fade into blue without sharp edges */
+    /* https://css-tricks.com/easing-linear-gradients/ */
+    background-image: linear-gradient(to top,
+        hsl(203, 85%, 57%) 0%,
+        hsla(203, 85%, 57%, 0.738) 19%,
+        hsla(203, 85%, 57%, 0.541) 34%,
+        hsla(203, 85%, 57%, 0.382) 47%,
+        hsla(203, 85%, 57%, 0.278) 56.5%,
+        hsla(203, 85%, 57%, 0.194) 65%,
+        hsla(203, 85%, 57%, 0.126) 73%,
+        hsla(203, 85%, 57%, 0.075) 80.2%,
+        hsla(203, 85%, 57%, 0.042) 86.1%,
+        hsla(203, 85%, 57%, 0.021) 91%,
+        hsla(203, 85%, 57%, 0.008) 95.2%,
+        hsla(203, 85%, 57%, 0.002) 98.2%,
+        hsla(203, 85%, 57%, 0) 100%
+    );
+}
+
+#foreground_bottom_2 {
+    position:absolute;
+    animation: change_theme_gradient_2 30s linear 0s backwards infinite;
+
+    /* Gradually fade into blue without sharp edges */
+    /* https://css-tricks.com/easing-linear-gradients/ */
+    background-image: linear-gradient(to top,
+        hsl(310, 37%, 49%) 0%,
+        hsla(310, 37%, 49%, 0.738) 19%,
+        hsla(310, 37%, 49%, 0.541) 34%,
+        hsla(310, 37%, 49%, 0.382) 47%,
+        hsla(310, 37%, 49%, 0.278) 56.5%,
+        hsla(310, 37%, 49%, 0.194) 65%,
+        hsla(310, 37%, 49%, 0.126) 73%,
+        hsla(310, 37%, 49%, 0.075) 80.2%,
+        hsla(310, 37%, 49%, 0.042) 86.1%,
+        hsla(310, 37%, 49%, 0.021) 91%,
+        hsla(310, 37%, 49%, 0.008) 95.2%,
+        hsla(310, 37%, 49%, 0.002) 98.2%,
+        hsla(310, 37%, 49%, 0) 100%
+    );
+}
+
+#foreground_bottom_3 {
+    position:absolute;
+    animation: change_theme_gradient_3 30s linear 0s backwards infinite;
+
+    /* Gradually fade into blue without sharp edges */
+    /* https://css-tricks.com/easing-linear-gradients/ */
+    background-image: linear-gradient(to top,
+    hsl(44, 80%, 68%) 0%,
+    hsla(44, 80%, 68%, 0.738) 19%,
+    hsla(44, 80%, 68%, 0.541) 34%,
+    hsla(44, 80%, 68%, 0.382) 47%,
+    hsla(44, 80%, 68%, 0.278) 56.5%,
+    hsla(44, 80%, 68%, 0.194) 65%,
+    hsla(44, 80%, 68%, 0.126) 73%,
+    hsla(44, 80%, 68%, 0.075) 80.2%,
+    hsla(44, 80%, 68%, 0.042) 86.1%,
+    hsla(44, 80%, 68%, 0.021) 91%,
+    hsla(44, 80%, 68%, 0.008) 95.2%,
+    hsla(44, 80%, 68%, 0.002) 98.2%,
+    hsla(44, 80%, 68%, 0) 100%
+    );
+}
+
+#line_hori_1_container {
+    float: left;
+    width: 59%;
+    height: .1vw;
+}
+
+#line_hori_2_container {
+    float: right;
+    width: 41%;
+    height: .1vw;
+}
+
+#line_vert_container {
+    float: right;
+    width: 82%;
+    height: calc(100% - .1vw);
+}
+
+#line_hori_1 {
+    float: right;
+    width: 100%;
+    height: 100%;
+    background: #33A7EE;
+    animation: line_horiz_animate 1.5s ease-in-out 0s backwards, change_theme_background 30s linear 0s backwards infinite;
+}
+
+#line_hori_2 {
+    float: left;
+    width: 100%;
+    height: 100%;
+    background: #33A7EE;
+    animation: line_horiz_animate 1.5s ease-in-out 0s backwards, change_theme_background 30s linear 0s backwards infinite;
+}
+
+#line_vert {
+    position: relative;
+    margin: auto;
+    width: .1vw;
+    height: 40%;
+    background: #33A7EE;
+    animation: line_vert_animate 1.5s ease-out 0s backwards, change_theme_background 30s linear 0s backwards infinite;
+}
+
+#col_greeting {
+    display: block;
+    position: relative;
+    width: 54%;
+    float: left;
+    color: #FFFFFF;
+    line-height: 150%;
+    font-size: 4vh;
+    animation: fade_in_animate 1.25s ease-in-out 1s backwards;
+}
+
+#col_logo {
+    display: block;
+    position: relative;
+    margin-top: 1.7%;
+    width: 10%;
+    height: 90%;
+    float: left;
+    animation: fade_in_animate 1s ease-in-out 0.2s backwards;
+}
+
+#col_button {
+    display: block;
+    position: relative;
+    margin-top: 2.3%;
+    width: 36%;
+    float: left;
+    font-size: 3vh;
+    animation: fade_in_animate 1.25s ease-in-out 1s backwards;
+}
+
+#container_logo {
+    position: relative;
+    width: 100%;
+}
+
+#img_logo {
+    display: block;
+    position: relative;
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+    z-index: 1;
+}
+
+#img_driven {
+    position: absolute;
+    display: block;
+    height: auto;
+    width: auto;
+    max-height: 70%;
+    max-width: 100%;
+    right: 0;
+    bottom: 0;
+    animation: fade_in_animate 1.25s ease-in-out 1s backwards;
+}
+
+#img_focused {
+    position: absolute;
+    height: auto;
+    width: auto;
+    max-height: 70%;
+    max-width: 100%;
+    right: 0;
+    bottom: 0;
+    animation: fade_in_animate 1.25s ease-in-out 1s backwards;
+}
+
+#img_unique {
+    position: absolute;
+    height: auto;
+    width: auto;
+    max-height: 70%;
+    max-width: 100%;
+    right: 0;
+    bottom: 0;
+    animation: fade_in_animate 1.25s ease-in-out 1s backwards;
+}
+
+#button_port {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 0 1vw;
+    border-radius: .5vw;
+    z-index:5;
+}
+
+#button_port:hover {
+    background: white;
+    color: #4D4F57;
+    font-weight: bold;
+}
+
+@keyframes line_vert_animate {
+
+    from {
+        height: 0;
+        background: white;
+    }
+    to {
+        height: 40%;
+    }
+}
+
+@keyframes line_horiz_animate {
+
+    from {
+        width: 0;
+        background: white;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fade_in_animate {
+    0%   { opacity: 0;   }
+    100% { opacity: 100; }
+}
+
+@keyframes change_theme_background {
+    0%   { background: #33A7EE; }
+    27%  { background: #33A7EE; }
+    33%  { background: #AB4E9C; }
+    60%  { background: #AB4E9C; }
+    66%  { background: #EFCC6C; }
+    93%  { background: #EFCC6C; }
+    100% { background: #33A7EE; }
+}
+
+@keyframes change_theme_gradient_1 {
+    0%   { opacity: 100; }
+    27%  { opacity: 100; }
+    33%  { opacity: 0;   }
+    60%  { opacity: 0;   }
+    66%  { opacity: 0;   }
+    93%  { opacity: 0;   }
+    100% { opacity: 100; }
+}
+
+@keyframes change_theme_gradient_2 {
+    0%   { opacity: 0;   }
+    27%  { opacity: 0;   }
+    33%  { opacity: 100; }
+    60%  { opacity: 100; }
+    66%  { opacity: 0;   }
+    93%  { opacity: 0;   }
+    100% { opacity: 0;   }
+}
+
+@keyframes change_theme_gradient_3 {
+    0%   { opacity: 0;   }
+    27%  { opacity: 0;   }
+    33%  { opacity: 0;   }
+    60%  { opacity: 0;   }
+    66%  { opacity: 100; }
+    93%  { opacity: 100; }
+    100% { opacity: 0;   }
+}

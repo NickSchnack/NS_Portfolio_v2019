@@ -1,0 +1,275 @@
+/**************/
+/* ANIMATIONS */
+/**************/
+
+/* https://css-tricks.com/making-animations-wait/
+- AUTHOR: DONOVAN HUTCHINSON */
+.-js-loading *,
+.-js-loading *:before,
+.-js-loading *:after {
+    animation-play-state: paused !important;
+    //background-color: red;
+}
+
+
+/*************/
+/* KEYFRAMES */
+/*************/
+@keyframes animate-landingLogo-FadeInOut {
+    0%   { opacity: 0; }
+    5%   { opacity: 0; }
+    20%  { opacity: 1; }
+    30%  { opacity: 1; }
+    40%  { opacity: 1; }
+    50%  { opacity: 0; }
+    60%  { opacity: 0; }
+    70%  { opacity: 0; }
+    80%  { opacity: 0; }
+    90%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes animate-delayedFadeIn_45 {
+    0%   { opacity: 0; }
+    10%  { opacity: 0; }
+    20%  { opacity: 0; }
+    30%  { opacity: 0; }
+    45%  { opacity: 0; }
+    55%  { opacity: 1; }
+    60%  { opacity: 1; }
+    70%  { opacity: 1; }
+    80%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { opacity: 1; }
+}
+@keyframes animate-delayedFadeIn_50 {
+    0%   { opacity: 0; }
+    10%  { opacity: 0; }
+    20%  { opacity: 0; }
+    30%  { opacity: 0; }
+    40%  { opacity: 0; }
+    50%  { opacity: 0; }
+    60%  { opacity: 1; }
+    70%  { opacity: 1; }
+    80%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { opacity: 1; }
+}
+@keyframes animate-delayedFadeIn_60 {
+    0%   { opacity: 0; }
+    10%  { opacity: 0; }
+    20%  { opacity: 0; }
+    30%  { opacity: 0; }
+    40%  { opacity: 0; }
+    50%  { opacity: 0; }
+    60%  { opacity: 0; }
+    70%  { opacity: 1; }
+    80%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { opacity: 1; }
+}
+@keyframes animate-delayedFadeIn_70 {
+    0%   { opacity: 0; }
+    10%  { opacity: 0; }
+    20%  { opacity: 0; }
+    30%  { opacity: 0; }
+    40%  { opacity: 0; }
+    50%  { opacity: 0; }
+    60%  { opacity: 0; }
+    70%  { opacity: 0; }
+    80%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { opacity: 1; }
+}
+@keyframes landing-flipInX-1 {
+    0%  { opacity: 0;
+    }
+    50% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    55% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+    65% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+    70% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+@keyframes landing-flipInX-2 {
+    0%  { opacity: 0;
+    }
+    52.5% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    57.5% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    62.5% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+    67.5% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+    72.5% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+@keyframes landing-flipInX-3 {
+    0%  { opacity: 0;
+    }
+    55% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    65% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+    75% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+@keyframes landing-flipInX-4 {
+    0%  { opacity: 0;
+    }
+    57.5% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    62.5% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    67.5% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+    72.5% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+    77.5% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+@keyframes landing-flipInX-5 {
+    0%  { opacity: 0;
+    }
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    65% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+    75% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+    80% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+@keyframes landing-flipInY-1 {
+    0%  { opacity: 0;
+    }
+    47.5% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    52.5% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    57.5% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+    62.5% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+    67.5% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+@keyframes animate-test-FadeOut {
+    0%   { opacity:  0; }
+    10%  { opacity: .1; }
+    20%  { opacity: .2; }
+    30%  { opacity: .3; }
+    40%  { opacity: .4; }
+    50%  { opacity: .5; }
+    60%  { opacity: .6; }
+    70%  { opacity: .7; }
+    80%  { opacity: .8; }
+    90%  { opacity: .9; }
+    100% { opacity:  1; }
+}

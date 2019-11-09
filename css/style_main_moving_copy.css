@@ -1,0 +1,124 @@
+.container-layout-overlay {
+    /* Test layout *
+    background-color: black;
+    /***************/
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
+/*** END CONTAINERS ***/
+
+.project-overlay-image {
+    -ms-grid-column: 2;                                                                                   /* Validate */
+    grid-column-start: 2;
+    -ms-grid-column-span: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 2;
+    grid-row-start: 2;
+    -ms-grid-row-span: 1;
+    grid-row-end: 3;
+
+    border: .5em solid rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+}
+.project-overlay-explore {
+    -ms-grid-column: 2;
+    grid-column-start: 2;
+    -ms-grid-column-span: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 3;
+    grid-row-start: 3;
+    -ms-grid-row-span: 1;
+    grid-row-end: 4;
+
+    background-color: #BC3E3E;
+    box-shadow: 0 12px 3px -5px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    font-weight: bold;
+    height: 100%;
+    letter-spacing:4px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+.project-overlay-explore:hover, .project-overlay-explore:active {
+    background-color: green;
+}
+.project-overlay-description-background {
+    -ms-grid-column: 2;
+    grid-column-start: 2;
+    -ms-grid-column-span: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 4;
+    grid-row-start: 4;
+    -ms-grid-row-span: 1;
+    grid-row-end: -1;
+
+    background-color: #4D4F57;
+    height: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    opacity: .7;
+    position: relative;
+    width: 100%;
+}
+.project-overlay-description-text {
+    -ms-grid-column: 2;
+    grid-column-start: 2;
+    -ms-grid-column-span: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 4;
+    grid-row-start: 4;
+    -ms-grid-row-span: 1;
+    grid-row-end: -1;
+
+    color: #FFFFFF;
+    line-height: 1.5em;
+    opacity: 1;
+    padding: 2em 1em 1em 1em;
+    position: relative;
+    text-align: center;
+    width: 87vw;
+}
+/*** END CONTENT: PROJECTS ***/
+
+
+/*** OVERLAY CLASSES ***/
+.background-project {
+    background-color: #FFFFFF;
+    opacity: .7;
+}
+.overlay-layout-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 16px 1fr 16px;
+    grid-template-columns: 16px 1fr 16px;
+    -ms-grid-rows: 64px .5fr 32px 1fr 16px;
+    grid-template-rows: 64px .5fr 32px 1fr 16px;
+    height: 100%;
+    width: auto;
+}
+/*** END OVERLAY CLASSES ***/
+
+
+/*** MISCELLANEOUS CLASSES ***/
+/* text */
+.hover_black:hover { color: #000000; font-weight: bold; }
+.nodecor_white:link,
+.nodecor_white:visited,
+.nodecor_white:hover,
+.nodecor_white:active { color: #FFFFFF; text-decoration: none; }
+
+/* overlays */
+.overlay-hide { display: none; }
+.noscroll { overflow: hidden; }
+
+/*** END MISCELLANEOUS CLASSES ***/
+
+
+
+
+
+
+
